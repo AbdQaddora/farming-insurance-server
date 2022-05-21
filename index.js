@@ -4,6 +4,7 @@ const PRIVATE_KEY = "71192909a65d0a0355a16be663d3e7bc589c61af088e0993f82b8dd8151
 const CONTRACT_ADDRESS = '0x2089aE2c0e845fD5299364fD72083097A411B6E4';
 const Provider = new ethers.providers.InfuraProvider("ropsten");
 
+console.log("our server is started working now 🎉");
 setInterval(() => runEveryDay(CONTRACT_ADDRESS, PRIVATE_KEY), 1000 * 60 * 60 * 24);
 
 async function runEveryDay(CONTRACT_ADDRESS, PRIVATE_KEY) {
